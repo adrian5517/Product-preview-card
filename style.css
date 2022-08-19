@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+:root {
+    --Very-darkblue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    min-width: 100vh;
+    font-size: 14px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.container{
+    margin: 30px auto;
+    padding: 0 3px;
+    
+}
+.grid{
+    max-width: 700px;
+    display: grid;
+    background-color: var(--White);
+    grid-template-columns:1fr 1fr;
+    border-radius: 15px;
+    overflow: hidden;
+
+}  
+.img img{
+    max-width: 100%;
+    display: inherit;
+}
+.card-content{
+    padding:35px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h6.pro-cat{
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    letter-spacing: 2.5px;
+}
+h2.pro-name{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color:var(--Very-darkblue)
+
+}    
+p.pro-des{
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--Dark-grayish-blue);
+}
+p.current-price{
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+    font-weight: 700;
+    font-size: 40px;
+}
+p.old-price{
+    position: relative;
+    float: right;
+    bottom: 30px;
+    text-decoration: line-through;
+    right: 45px;
+    color: var(--Dark-grayish-blue);
+}
+button.cta{
+    border-radius: 10px;
+    border-color: var(--Dark-cyan);
+    background-color: var(--Dark-cyan);
+    padding: 15px;
+    border-bottom-color: var(--Dark-cyan);
+    font-weight: 700;
+    color: var(--White);
+    font-size: 15px;
+    border-bottom: var(--Dark-cyan);
+    border-right: var(--Dark-cyan);
+
+}
+.cta img{
+    position: relative;
+    right: 8px;
+    top: 2px;
+}
+.attribution{
+    text-align: center;
+    line-height: 4em;
+}
+
+
